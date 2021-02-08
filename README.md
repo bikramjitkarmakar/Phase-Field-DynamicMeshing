@@ -1,6 +1,8 @@
 # Phase-Field-DynamicMeshing
  OpenFOAM based phasefield solver with dynamic meshing
  #You can compile the lib where ever you want. This is just an example:
+ 
+ 
  mkdir -p $FOAM_RUN/../OpenFOAM_extensions
 
  #Switch to this directory
