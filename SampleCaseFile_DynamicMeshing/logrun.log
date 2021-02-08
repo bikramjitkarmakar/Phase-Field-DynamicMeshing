@@ -1,0 +1,197 @@
+--------------------------------------------------------------------------
+WARNING: Linux kernel CMA support was requested via the
+btl_vader_single_copy_mechanism MCA variable, but CMA support is
+not available due to restrictive ptrace settings.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: abhikmmg-B360M-D3H
+--------------------------------------------------------------------------
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  dev                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : dev-59be3e7
+Exec   : phaseFieldDy -parallel
+Date   : Nov 18 2019
+Time   : 14:13:00
+Host   : "abhikmmg-B360M-D3H"
+PID    : 15773
+I/O    : uncollated
+Case   : /home/abhikmmg/OpenFOAM/abhikmmg-dev-18.10v01-cfdsupport/run/mycases/phase_FieldDy/phase-field_case_file
+nProcs : 12
+Slaves : 
+11
+(
+"abhikmmg-B360M-D3H.15774"
+"abhikmmg-B360M-D3H.15775"
+"abhikmmg-B360M-D3H.15776"
+"abhikmmg-B360M-D3H.15777"
+"abhikmmg-B360M-D3H.15778"
+"abhikmmg-B360M-D3H.15779"
+"abhikmmg-B360M-D3H.15780"
+"abhikmmg-B360M-D3H.15781"
+"abhikmmg-B360M-D3H.15782"
+"abhikmmg-B360M-D3H.15783"
+"abhikmmg-B360M-D3H.15784"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting dynamicFvMesh dynamicRefineFvMesh
+
+SIMPLE: No convergence criteria found
+
+
+Calculating temperature distribution
+
+Time = 100
+
+Min/max magq:0 0.0294628
+Min/max ac_01:0.94 1.02
+Min/max dadgradPhi:(-8.31322e-13 -8.31322e-13 0) (8.31321e-13 8.31322e-13 0)
+GAMG:  Solving for alpha, Initial residual = 0.0489619, Final residual = 1.56165e-05, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0665255, Final residual = 2.43701e-07, No Iterations 1
+Min/max alpha:0.000207491 1
+Min/max magq:0 0.022415
+Min/max ac_01:0.94 1.01992
+Min/max dadgradPhi:(-0.0010583 -0.00105838 0) (0.00105831 0.00105839 0)
+GAMG:  Solving for alpha, Initial residual = 0.0106598, Final residual = 6.16658e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0195326, Final residual = 9.40294e-08, No Iterations 1
+Min/max alpha:0.000148715 1.00059
+Min/max magq:0 0.0235669
+Min/max ac_01:0.94 1.02
+Min/max dadgradPhi:(-0.00123059 -0.00123044 0) (0.00122195 0.00123045 0)
+GAMG:  Solving for alpha, Initial residual = 0.00460869, Final residual = 1.27285e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0059504, Final residual = 2.56493e-08, No Iterations 1
+Min/max alpha:0.000191312 1
+ExecutionTime = 0.58 s  ClockTime = 0 s
+
+Time = 200
+
+Min/max magq:0 0.0229844
+Min/max ac_01:0.94 1.01995
+Min/max dadgradPhi:(-0.00121959 -0.00121909 0) (0.00121109 0.00121908 0)
+GAMG:  Solving for alpha, Initial residual = 0.0321241, Final residual = 1.29995e-05, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0528932, Final residual = 3.1893e-07, No Iterations 1
+Min/max alpha:0.00101401 1
+Min/max magq:0 0.0192126
+Min/max ac_01:0.94 1.01981
+Min/max dadgradPhi:(-0.00114421 -0.00114675 0) (0.00114892 0.00114674 0)
+GAMG:  Solving for alpha, Initial residual = 0.00669596, Final residual = 2.70263e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0135721, Final residual = 9.79361e-08, No Iterations 1
+Min/max alpha:0.000579032 1
+Min/max magq:0 0.019028
+Min/max ac_01:0.94 1.0199
+Min/max dadgradPhi:(-0.00117496 -0.00117769 0) (0.00117853 0.00117768 0)
+GAMG:  Solving for alpha, Initial residual = 0.00219547, Final residual = 6.53648e-07, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.00283979, Final residual = 1.04014e-08, No Iterations 1
+Min/max alpha:0.000833416 1
+ExecutionTime = 0.83 s  ClockTime = 0 s
+
+Time = 300
+
+Min/max magq:0 0.0187929
+Min/max ac_01:0.94 1.01985
+Min/max dadgradPhi:(-0.00115826 -0.0011609 0) (0.00116291 0.0011609 0)
+GAMG:  Solving for alpha, Initial residual = 0.0249555, Final residual = 7.26831e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.053674, Final residual = 3.01156e-07, No Iterations 1
+Min/max alpha:0.0025317 1
+Min/max magq:0 0.0161075
+Min/max ac_01:0.94 1.01978
+Min/max dadgradPhi:(-0.00108812 -0.0010932 0) (0.00109798 0.00109319 0)
+GAMG:  Solving for alpha, Initial residual = 0.00560404, Final residual = 4.93654e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0111767, Final residual = 6.05894e-08, No Iterations 1
+Min/max alpha:0.00158477 1
+Min/max magq:0 0.0156058
+Min/max ac_01:0.94 1.01986
+Min/max dadgradPhi:(-0.00099532 -0.00100612 0) (0.00100987 0.00100613 0)
+GAMG:  Solving for alpha, Initial residual = 0.00192662, Final residual = 1.57057e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.00475156, Final residual = 2.19872e-08, No Iterations 1
+Min/max alpha:0.00207183 1
+ExecutionTime = 1.07 s  ClockTime = 1 s
+
+Time = 400
+
+Min/max magq:0 0.0153772
+Min/max ac_01:0.94 1.01982
+Min/max dadgradPhi:(-0.000965206 -0.000978353 0) (0.000981558 0.00097836 0)
+GAMG:  Solving for alpha, Initial residual = 0.0230807, Final residual = 6.056e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0654997, Final residual = 1.59932e-07, No Iterations 1
+Min/max alpha:0.00540809 1
+Min/max magq:0 0.0131207
+Min/max ac_01:0.94 1.01983
+Min/max dadgradPhi:(-0.000847261 -0.000868659 0) (0.000869 0.000868672 0)
+GAMG:  Solving for alpha, Initial residual = 0.00802885, Final residual = 6.8646e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.0173034, Final residual = 1.81107e-07, No Iterations 1
+Min/max alpha:0.00430633 1
+Min/max magq:0 0.0124429
+Min/max ac_01:0.94 1.01983
+Min/max dadgradPhi:(-0.000775637 -0.000795378 0) (0.000797424 0.000795389 0)
+GAMG:  Solving for alpha, Initial residual = 0.00206204, Final residual = 1.77042e-06, No Iterations 1
+GAMG:  Solving for mu, Initial residual = 0.00529397, Final residual = 5.45729e-08, No Iterations 1
+Min/max alpha:0.00496513 1
+ExecutionTime = 1.31 s  ClockTime = 1 s
+
+Time = 500
+
+Selected 116 cells for refinement out of 250000.
+Refined from 250000 to 250812 cells.
+Selected 0 split points out of a possible 116.
+Min/max magq:0 4.05138
+Min/max ac_01:0.94 1.02
+Min/max dadgradPhi:(-0.00469853 -0.00477471 -9.95866e-05) (0.00483267 0.00477467 9.95866e-05)
+GAMG:  Solving for alpha, Initial residual = 0.134792, Final residual = 0.000162756, No Iterations 1
+[abhikmmg-B360M-D3H:15778] *** Process received signal ***
+[abhikmmg-B360M-D3H:15778] Signal: Floating point exception (8)
+[abhikmmg-B360M-D3H:15778] Signal code:  (-6)
+[abhikmmg-B360M-D3H:15778] Failing at address: 0x3e800003da2
+[abhikmmg-B360M-D3H:15779] *** Process received signal ***
+[abhikmmg-B360M-D3H:15779] Signal: Floating point exception (8)
+[abhikmmg-B360M-D3H:15779] Signal code:  (-6)
+[abhikmmg-B360M-D3H:15779] Failing at address: 0x3e800003da3
+[abhikmmg-B360M-D3H:15778] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f81231634b0]
+[abhikmmg-B360M-D3H:15778] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7f8123163428]
+[abhikmmg-B360M-D3H:15778] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f81231634b0]
+[abhikmmg-B360M-D3H:15778] [ 3] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver5scaleERNS_5FieldIdEES3_RKNS_9lduMatrixERKNS_10FieldFieldIS1_dEERKNS_8UPtrListIKNS_17lduInterfaceFieldEEERKS2_h+0xcd)[0x7f81246de10d]
+[abhikmmg-B360M-D3H:15778] [ 4] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver6VcycleERKNS_7PtrListINS_9lduMatrix8smootherEEERNS_5FieldIdEERKS8_S9_S9_S9_S9_S9_RNS1_IS8_EESD_h+0xf61)[0x7f81246e29c1]
+[abhikmmg-B360M-D3H:15778] [ 5] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver5solveERNS_5FieldIdEERKS2_h+0x789)[0x7f81246e4a29]
+[abhikmmg-B360M-D3H:15778] [ 6] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam8fvMatrixIdE15solveSegregatedERKNS_10dictionaryE+0x14c)[0x7f8126f6dd1c]
+[abhikmmg-B360M-D3H:15778] [ 7] phaseFieldDy(_ZN4Foam8fvMatrixIdE5solveERKNS_10dictionaryE+0x12c)[0x458fac]
+[abhikmmg-B360M-D3H:15778] [ 8] phaseFieldDy(_ZN4Foam8fvMatrixIdE5solveEv+0xe3)[0x459323]
+[abhikmmg-B360M-D3H:15778] [ 9] phaseFieldDy[0x41fd9f]
+[abhikmmg-B360M-D3H:15778] [10] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f812314e830]
+[abhikmmg-B360M-D3H:15778] [11] phaseFieldDy[0x423389]
+[abhikmmg-B360M-D3H:15778] *** End of error message ***
+[abhikmmg-B360M-D3H:15779] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f3922c774b0]
+[abhikmmg-B360M-D3H:15779] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7f3922c77428]
+[abhikmmg-B360M-D3H:15779] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x354b0)[0x7f3922c774b0]
+[abhikmmg-B360M-D3H:15779] [ 3] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver5scaleERNS_5FieldIdEES3_RKNS_9lduMatrixERKNS_10FieldFieldIS1_dEERKNS_8UPtrListIKNS_17lduInterfaceFieldEEERKS2_h+0xbe)[0x7f39241f20fe]
+[abhikmmg-B360M-D3H:15779] [ 4] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver6VcycleERKNS_7PtrListINS_9lduMatrix8smootherEEERNS_5FieldIdEERKS8_S9_S9_S9_S9_S9_RNS1_IS8_EESD_h+0xf61)[0x7f39241f69c1]
+[abhikmmg-B360M-D3H:15779] [ 5] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libOpenFOAM.so(_ZNK4Foam10GAMGSolver5solveERNS_5FieldIdEERKS2_h+0x789)[0x7f39241f8a29]
+[abhikmmg-B360M-D3H:15779] [ 6] /home/abhikmmg/OpenFOAM/OpenFOAM-in-Box/OpenFOAM-in-Box-18.10v01/OpenFOAM-dev/platforms/linux64Gcc62DPInt32Opt/lib/libfiniteVolume.so(_ZN4Foam8fvMatrixIdE15solveSegregatedERKNS_10dictionaryE+0x14c)[0x7f3926a81d1c]
+[abhikmmg-B360M-D3H:15779] [ 7] phaseFieldDy(_ZN4Foam8fvMatrixIdE5solveERKNS_10dictionaryE+0x12c)[0x458fac]
+[abhikmmg-B360M-D3H:15779] [ 8] phaseFieldDy(_ZN4Foam8fvMatrixIdE5solveEv+0xe3)[0x459323]
+[abhikmmg-B360M-D3H:15779] [ 9] phaseFieldDy[0x41fd9f]
+[abhikmmg-B360M-D3H:15779] [10] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f3922c62830]
+[abhikmmg-B360M-D3H:15779] [11] phaseFieldDy[0x423389]
+[abhikmmg-B360M-D3H:15779] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 6 with PID 0 on node abhikmmg-B360M-D3H exited on signal 8 (Floating point exception).
+--------------------------------------------------------------------------

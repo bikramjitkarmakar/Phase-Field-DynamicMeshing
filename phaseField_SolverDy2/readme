@@ -1,0 +1,4 @@
+solver name:phaseFieldDy2
+following commands should create the executable of the solver
+wclean
+wmake
