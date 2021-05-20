@@ -1,5 +1,7 @@
 # Phase-Field-DynamicMeshing
- OpenFOAM based phasefield solver with dynamic meshing
+ 
+ #OpenFOAM based phasefield solver with dynamic meshing
+ 
  #You can compile the lib where ever you want. This is just an example:
  
  
